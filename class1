@@ -1,0 +1,64 @@
+using System;
+
+namespace qq
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] niza = new int[5];
+            niza[0] = 10;
+            niza[1] = 20;
+            niza[2] = 30;
+            niza[3] = 40;
+            niza[4] = 50;
+
+            Console.WriteLine(niza.Length);
+
+           for (int i = 0; i < niza.Length; i++)
+           { 
+                Console.WriteLine(niza[i]);
+           }
+
+            //string[] zborovi = new string[] { "Radomir", "Kirik" };
+            //for (int i = 0; i < zborovi.Length; i++)
+            //{
+            //    Console.WriteLine(zborovi[i]);        
+            //}
+
+            //for (int r = 0; r < niza.Length; r++)
+            //{
+            //    niza[r] = niza[r] * 100;
+            //    Console.WriteLine(niza[r]);
+            //}
+        }
+    }
+}
+
+
+//        class student
+//        {
+//            public string FistName;
+//            public string LastName;
+//            public int age;
+//        }
+//        }
+//}
+
+//student student1 = new student
+//{
+//    FistName = "Radomir",
+//    LastName = "Kirik",
+//    age = 17
+//};
+
+//student student2 = new student();
+//{
+//    student2.FistName = "AA";
+//    student2.LastName = "BB";
+//    student2.age = 17;
+//};
+
+//student[] students = new student[2] { student1, student2 };
+////Console.WriteLine(student1);
+////Console.WriteLine(student2.FistName);
