@@ -1,0 +1,20 @@
+using System;
+
+namespace PozotivenOrNegativen
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int broj = 15;
+            if (broj > 0)
+            {
+                Console.WriteLine("Brojot e Pozitiven");
+            }
+            if (broj < 0)
+            {
+                Console.WriteLine("Brojot e Negative");
+            }
+        }   
+    }
+}
