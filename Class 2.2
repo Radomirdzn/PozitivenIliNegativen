@@ -1,0 +1,51 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace aa2
+{
+    class Student
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public int Age { get; set; }
+
+        public int[] Grades { get; set; }
+
+        private decimal prosek = 0;
+
+        public decimal PresmetajProsek()
+        {
+
+
+            if (Grades.Length == 0)
+            {
+                return 0;
+            }
+            else
+            {
+                
+
+                foreach (int grade in Grades)
+                {
+                    prosek += grade;
+                }
+                return prosek / Grades.Length;
+
+            }
+
+        }
+
+        public void Info()
+        {
+            Console.WriteLine("Ucenik: " + FirstName + " " + LastName);
+            Console.WriteLine("Godini: " + Age);
+            Console.WriteLine("Prosek: " + prosek);
+
+        }
+
+
+
+    }
+
+}
