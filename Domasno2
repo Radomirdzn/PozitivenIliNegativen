@@ -1,0 +1,62 @@
+
+  #1 Направете низа од броеви и потоа напишете код кој ќе го пресмета збирот на сите броеви во низата
+
+using System;
+
+namespace homework
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] niza = new int[5];
+            niza[0] = 10;
+            niza[1] = 20;
+            niza[2] = 30;
+            niza[3] = 40;
+            niza[4] = 50;
+
+            int zbir = 0;
+            for (int i = 0; i < niza.Length; i++)
+            {
+                zbir += niza[i];
+            }
+
+            Console.WriteLine("Zbirot na broevite vo nizata e " + zbir);
+
+            Console.ReadKey();
+        }
+       
+    }
+}
+
+---------------
+
+ #3  Код кој ќе ја испечати низата во конзола во од последниот елемент кој првиот (во обратен редослед)
+ 
+using System;
+
+namespace homework
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] niza = new int[5];
+            niza[0] = 10;
+            niza[1] = 20;
+            niza[2] = 30;
+            niza[3] = 40;
+            niza[4] = 50;
+
+            for (int i = niza.Length - 1; i >= 0; i--)
+            {
+                Console.WriteLine(niza[i]);
+            }
+
+            Console.ReadKey();
+        }
+       
+    }
+}
+
